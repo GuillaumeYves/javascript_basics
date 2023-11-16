@@ -1,0 +1,86 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test javascript THP 16/11/2023</title>
+
+    <!-- Ajout Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bg-light">
+    <div class="container mt-5">
+      <div class="jumbotron">
+        <h1 class="display-4">Choisissez un script :</h1>
+        <h3>N'oubliez pas d'ouvrir l'onglet "Console" dans votre dev tool!</h3>
+      </div>
+
+      <!-- Bouttons avec onclick pour exécuter le script choisis -->
+      <div class="list-group">
+        <button
+          type="button"
+          class="list-group-item list-group-item-action"
+          onclick="executeScript('script_1.js')"
+        >
+          Bonjour
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action"
+          onclick="executeScript('script_2.js')"
+        >
+          Calculs rapides
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action"
+          onclick="executeScript('script_3.js')"
+        >
+          Pyramide de Mario
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action"
+          onclick="executeScript('script_4.js')"
+        >
+          Startup Nation
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action"
+          onclick="executeScript('script_5.js')"
+        >
+          Bibliothécaire
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action"
+          onclick="executeScript('script_6.js')"
+        >
+          Code la vie
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action"
+          onclick="executeScript('script_7.js')"
+        >
+          Acné-Bot
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function executeScript(scriptName) {
+        // Charger le script sélectionné
+        const script = document.createElement("script");
+        script.src = scriptName;
+        document.body.appendChild(script);
+      }
+    </script>
+  </body>
+</html>
